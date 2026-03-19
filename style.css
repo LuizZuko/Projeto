@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 2.916in 1fr; 
+    grid-template-rows: 0.833in 1fr 0.625in;
+    min-height: 100vh;
+}
