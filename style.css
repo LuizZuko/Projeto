@@ -14,3 +14,14 @@
     grid-template-rows: 0.833in 1fr 0.625in;
     min-height: 100vh;
 }
+.header {
+    grid-area: header;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    padding: 0 0.416in; 
+    box-shadow: 0 0.02in 0.1in rgba(0,0,0,0.2); 
+    z-index: 10;
+    animation: slideDown 0.7s ease;
+}
