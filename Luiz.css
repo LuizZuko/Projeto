@@ -57,3 +57,59 @@ body {
     margin-bottom: 40px;
     font-size: 2.2rem;
 }
+
+.shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.Shows {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+
+.Shows:hover { 
+    transform: scale(1.02); 
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.show-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag-absolute {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff4757;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    z-index: 10;
+    animation: pulse 2s infinite;
+}
+
+.Shows-content { 
+    padding: 20px; 
+}
+
+.Shows-content h2 { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.4rem; 
+    margin-bottom: 10px; 
+}
