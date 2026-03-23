@@ -113,3 +113,52 @@ body {
     font-size: 1.4rem; 
     margin-bottom: 10px; 
 }
+
+
+.data { 
+    font-weight: bold; 
+    color: #777; 
+    margin: 15px 0; 
+}
+
+.Ingresso {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.Ingresso:hover {
+    background: #ffcc00;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.Contatos { 
+    margin-top: 60px; 
+    background: white; 
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.Contatos h3 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.row { 
+    display: flex;
+    gap: 15px; 
+}
