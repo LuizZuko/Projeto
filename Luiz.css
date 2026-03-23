@@ -162,3 +162,62 @@ body {
     display: flex;
     gap: 15px; 
 }
+
+input, select, textarea { 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-family: inherit; 
+}
+
+.row input { flex: 1; }
+
+.Enviar { 
+    background: #ff4757; 
+    color: white; 
+    border: none; 
+    padding: 15px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.Enviar:hover {
+    background: #e04050;
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); 
+    }
+    70% { 
+        transform: scale(1.05); 
+        box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); 
+    }
+    100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); 
+    }
+}
+
+@media (max-width: 768px) {
+    .row { 
+        flex-direction: column; 
+    }
+    .main-header { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px; 
+    }
+}
+
+.Rodape { 
+    text-align: center; 
+    padding: 30px; 
+    background: #eee; 
+    margin-top: 50px; 
+    font-size: 0.9rem;
+    color: #666;
+}
