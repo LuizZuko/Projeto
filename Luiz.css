@@ -74,7 +74,7 @@ body {
 }
 
 .Shows:hover { 
-    transform: scale(1.02); 
+    transform: scale(1.04); 
 }
 
 .image-container {
@@ -180,11 +180,11 @@ input, select, textarea {
     border-radius: 8px; 
     cursor: pointer; 
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.5s;
 }
 
 .Enviar:hover {
-    background: #e04050;
+    background: #d0d01c;
 }
 
 @keyframes pulse {
