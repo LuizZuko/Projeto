@@ -27,7 +27,7 @@
 }
 .logo { 
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem; 
+    font-size: 0.25in; 
     font-weight: bold;
 }
 
@@ -36,7 +36,7 @@
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 0.2083in;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -44,21 +44,21 @@
 .nav-links a:hover { color: #ffcc00; }
 
 .container { 
-    max-width: 1200px; 
-    margin: 40px auto; 
-    padding: 0 20px; 
+    max-width: 12.5in; 
+    margin: 0.4167in auto; 
+    padding: 0 0.2083in; 
 }
 
 .pagina-titulo {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 0.4167in;
+    font-size: 0.4167in;
     color: #ffcc00;
 }
 
 .shows-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(3.125in, 1fr));
+    gap: 0.3125in;
 }
