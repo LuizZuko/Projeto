@@ -69,3 +69,40 @@ body {
     list-style: none; 
     padding: 0;
 }
+
+.sidebar li {
+    padding: 0.15in; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.08in; 
+    margin-bottom: 0.08in;
+    color: #ccc;
+}
+
+.sidebar li:hover { 
+    background: rgba(37, 117, 252, 0.2); 
+    color: #fff;
+    padding-left: 0.26in; 
+}
+
+/* conteudo principal */
+.content {
+    grid-area: content;
+    padding: 0.31in; 
+    overflow-y: auto;
+}
+
+.banner {
+    margin-bottom: 0.31in;
+    padding: 0.42in;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.15in;
+    border-left: 0.05in solid #2575fc;
+}
+
+/* grid fe eventos e cards  */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.92in, 1fr));
+    gap: 0.26in; 
+ }
