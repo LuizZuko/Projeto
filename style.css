@@ -47,18 +47,23 @@ body {
 }
 
 .sidebar li {
-    padding: 0.15in; 
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 0.08in; 
+    padding: 0in; 
     margin-bottom: 0.08in;
-    color: #ccc;
 }
 
-.sidebar li:hover { 
-    background: rgba(37, 117, 252, 0.2); 
+.sidebar li a {
+    display: block; 
+    padding: 0.15in; 
+    text-decoration: none;
+    color: #ccc;
+    transition: all 0.3s ease;
+    border-radius: 0.08in;
+}
+
+.sidebar li a:hover {
+    background: rgba(37, 117, 252, 0.2);
     color: #fff;
-    padding-left: 0.26in; 
+    padding-left: 0.26in;
 }
 
 /* conteudo principal */
