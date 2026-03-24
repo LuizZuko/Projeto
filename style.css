@@ -112,7 +112,7 @@ body {
 
 .card-info h3 {
     margin-bottom: 0.08in;
-    font-size: 0.2in; /* Aproximadamente 1.2rem */
+    font-size: 0.2in; 
 }
 
 .card-info p {
@@ -120,3 +120,4 @@ body {
     font-size: 0.15in;
     margin-bottom: 0.15in;
 }
+/* Estou segindo os As regras da polegada*/
