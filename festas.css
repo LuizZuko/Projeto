@@ -90,3 +90,39 @@
     object-fit: cover;
     transition: 0.5s;
 }
+.Shows:hover .show-img { transform: scale(1.1); }
+
+.tag-absolute {
+    position: absolute;
+    top: 0.15625in;        /* 15px */
+    right: 0.15625in;      /* 15px */
+    background: #ff4757;
+    color: white;
+    padding: 0.0625in 0.15625in; /* 6px 15px */
+    border-radius: 0.20833in;    /* 20px */
+    font-weight: bold;
+    font-size: 0.7rem; 
+    z-index: 10;
+    animation: pulse 2s infinite;
+}
+
+.Shows-content { 
+    padding: 0.20833in;    /* 20px */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Shows-content h2 { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.4rem; 
+    margin-bottom: 0.10417in; /* 10px */
+    color: #fff;
+}
+
+.detalhes-festa {
+    color: #ffcc00;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.10417in; /* 10px */
+}
