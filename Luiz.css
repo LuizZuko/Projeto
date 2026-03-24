@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff0e6;
     color: #333;
     line-height: 1.6;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .logo span { 
-    color: #ffcc00; 
+    color: #ff6200; 
 }
 
 .nav-links a {
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffcc00; 
+    color: #ff9100; 
 }
 
 .container { 
@@ -123,7 +123,7 @@ body {
 .Ingresso:hover {
     background: #ffcc00;
     color: black;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
 }
 
 .Contatos { 
@@ -139,7 +139,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.newsletter-form { 
+.AreaContatos { 
     display: flex; 
     flex-direction: column; 
     gap: 15px; 
@@ -160,7 +160,7 @@ input, select, textarea {
 .row input { flex: 1; }
 
 .Enviar { 
-    background: #ff4757; 
+    background: #ff0318; 
     color: white; 
     border: none; 
     padding: 15px; 
@@ -171,22 +171,7 @@ input, select, textarea {
 }
 
 .Enviar:hover {
-    background: #d0d01c;
-}
-
-@keyframes pulse {
-    0% { 
-        transform: scale(1); 
-        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); 
-    }
-    70% { 
-        transform: scale(1.05); 
-        box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); 
-    }
-    100% { 
-        transform: scale(1); 
-        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); 
-    }
+    background: #ff7700;
 }
 
 @media (max-width: 768px) {
