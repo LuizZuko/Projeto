@@ -90,19 +90,6 @@ body {
     object-fit: cover;
 }
 
-.tag-absolute {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #ff4757;
-    color: white;
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.75rem;
-    z-index: 10;
-    animation: pulse 2s infinite;
-}
 
 .Shows-content { 
     padding: 20px; 
