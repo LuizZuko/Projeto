@@ -44,3 +44,28 @@ body {
     grid-template-rows: 0,83in 1fr 0,625in;
     min-height: 100vh;
 }
+
+/* header  */
+.header {
+    grid-area: header;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    padding: 0 0.42in; 
+    box-shadow: 0 0.02in 0.1in rgba(0,0,0,0.3); 
+    z-index: 10;
+}
+
+/* sidebar da navegação  */
+.sidebar {
+    grid-area: sidebar;
+    background: #1a1a1a;
+    padding: 0.21in; 
+    border-right: 0.01in solid #333; /* polegada milimetrica */
+}
+
+.sidebar ul { 
+    list-style: none; 
+    padding: 0;
+}
