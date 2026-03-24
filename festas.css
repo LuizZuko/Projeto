@@ -62,3 +62,31 @@
     grid-template-columns: repeat(auto-fit, minmax(3.125in, 1fr));
     gap: 0.3125in;
 }
+.Shows {
+    background: #1c1c1c;
+    border-radius: 0.125in; 
+    overflow: hidden;
+    border: 0.0104in solid #333; 
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.Shows:hover { 
+    transform: translateY(-0.1042in);
+    border-color: #ffcc00;
+}
+
+.image-container {
+    width: 100%;
+    height: 2.0833in;
+    overflow: hidden;
+    position: relative;
+}
+
+.show-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
