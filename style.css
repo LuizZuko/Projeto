@@ -126,3 +126,25 @@ body {
     margin-bottom: 0.15in;
 }
 /* Estou segindo os As regras da polegada*/
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.12in;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 0.06in;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.01in;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff3333;
+    transform: scale(1.02);
+    box-shadow: 0in 0.04in 0.15in rgba(255, 77, 77, 0.3);
+}
