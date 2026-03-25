@@ -15,12 +15,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 8%;
+    padding: 0,156in 8%;
     background-color: #1a1a1a;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #ffcc00;
+    border-bottom: 0,020in solid #ffcc00;
 }
 .logo { 
     font-family: 'Montserrat', sans-serif;
