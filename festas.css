@@ -151,6 +151,81 @@ body {
     padding: 0,416in 0,208in;
 }
 
+.Contatos {
+    padding: 0.625in 0;
+    background-color: #0f0f0f;
+}
+
+.form-wrapper {
+    max-width: 8.33in;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 0.416in;
+    border-radius: 0.15in;
+    border: 0.01in solid #333;
+}
+
+.form-wrapper h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffcc00;
+    font-size: 0.31in;
+    margin-bottom: 0.25in;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15in;
+}
+
+.newsletter-form .row {
+    display: flex;
+    gap: 0.15in;
+}
+
+.newsletter-form input, 
+.newsletter-form select, 
+.newsletter-form textarea {
+    width: 100%;
+    padding: 0.125in;
+    background: #222;
+    border: 0.01in solid #444;
+    color: white;
+    border-radius: 0.05in;
+    font-size: 0.16in;
+}
+
+.newsletter-form textarea {
+    height: 1.25in;
+    resize: vertical;
+}
+
+.newsletter-form input:focus, 
+.newsletter-form select:focus, 
+.newsletter-form textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+}
+
+.Enviar {
+    background: #ffcc00;
+    color: #000;
+    padding: 0.15in;
+    border: none;
+    border-radius: 0.05in;
+    font-weight: bold;
+    font-size: 0.18in;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.Enviar:hover {
+    background: #e6b800;
+    transform: scale(1.02);
+} 
+
 @media (max-width: 6.25in) {
     .main-header {
         flex-direction: column;
