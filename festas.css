@@ -124,3 +124,37 @@
     font-size: 0.9rem;
     margin-bottom: 0.10417in; 
 }
+.descricao {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 0.208in;
+}
+
+.btn-mais-info {
+    display: block;
+    width: 100%;
+    padding: 0.125in;
+    background: transparent;
+    color: #ffcc00;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.021in solid #ffcc00;
+    border-radius: 0.0625in;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.btn-mais-info:hover { 
+    background: #ffcc00; 
+    color: #000; 
+}
+
+@media (max-width: 6.25in) {
+    .main-header {
+        flex-direction: column;
+        padding: 0.156in;
+    }
+    .nav-links { margin-top: 0.156in; }
+    .pagina-titulo { font-size: 1.8rem; }
+}
