@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0f0f0f; 
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0,156in 8%;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0,020in solid #ffcc00;
+}
+.logo { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.25in; 
+    font-weight: bold;
+}
+
+.logo span { color: #ffcc00; }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0.2083in;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #ffcc00; }
+
+.container { 
+    max-width: 12.5in; 
+    margin: 0.4167in auto; 
+    padding: 0 0.2083in; 
+}
+
+.pagina-titulo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 0.4167in;
+    font-size: 0.4167in;
+    color: #ffcc00;
+}
+
+.shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3.125in, 1fr));
+    gap: 0.3125in;
+}
+.Shows {
+    background: #1c1c1c;
+    border-radius: 0.125in; 
+    overflow: hidden;
+    border: 0.0104in solid #333; 
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.Shows:hover { 
+    transform: translateY(-0.1042in);
+    border-color: #ffcc00;
+}
+
+.image-container {
+    width: 100%;
+    height: 2.0833in;
+    overflow: hidden;
+    position: relative;
+}
+
+.show-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.Shows:hover .show-img { transform: scale(1.1); }
+
+.tag-absolute {
+    position: absolute;
+    top: 0.15625in;       
+    right: 0.15625in;      
+    background: #ff4757;
+    color: white;
+    padding: 0.0625in 0.15625in; 
+    border-radius: 0.20833in;    
+    font-size: 0.7rem; 
+    z-index: 10;
+    animation: pulse 2s infinite;
+}
+
+.Shows-content { 
+    padding: 0.20833in;    
+    display: flex;
+    flex-direction: column;
+}
+
+.Shows-content h2 { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.4rem; 
+    margin-bottom: 0.10417in; 
+    color: #fff;
+}
+
+.detalhes-festa {
+    color: #ffcc00;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.10417in; 
+}
+.descricao {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 0.208in;
+}
+
+.btn-mais-info {
+    display: block;
+    width: 100%;
+    padding: 0.125in;
+    background: transparent;
+    color: #ffcc00;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0.021in solid #ffcc00;
+    border-radius: 0.0625in;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.btn-mais-info:hover { 
+    background: #ffcc00; 
+    color: #000; 
+}
+ .main-footer {
+    text-align: center;
+    padding: 0,416in 0,208in;
+}
+
+.Contatos {
+    padding: 0.625in 0;
+    background-color: #0f0f0f;
+}
+
+.form-wrapper {
+    max-width: 8.33in;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 0.416in;
+    border-radius: 0.15in;
+    border: 0.01in solid #333;
+}
+
+.form-wrapper h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffcc00;
+    font-size: 0.31in;
+    margin-bottom: 0.25in;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15in;
+}
+
+.newsletter-form .row {
+    display: flex;
+    gap: 0.15in;
+}
+
+.newsletter-form input, 
+.newsletter-form select, 
+.newsletter-form textarea {
+    width: 100%;
+    padding: 0.125in;
+    background: #222;
+    border: 0.01in solid #444;
+    color: white;
+    border-radius: 0.05in;
+    font-size: 0.16in;
+}
+
+.newsletter-form textarea {
+    height: 1.25in;
+    resize: vertical;
+}
+
+.newsletter-form input:focus, 
+.newsletter-form select:focus, 
+.newsletter-form textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+}
+
+.Enviar {
+    background: #ffcc00;
+    color: #000;
+    padding: 0.15in;
+    border: none;
+    border-radius: 0.05in;
+    font-weight: bold;
+    font-size: 0.18in;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.Enviar:hover {
+    background: #e6b800;
+    transform: scale(1.02);
+} 
+
+@media (max-width: 6.25in) {
+    .main-header {
+        flex-direction: column;
+        padding: 0.156in;
+    }
+    .nav-links { margin-top: 0.156in; }
+    .pagina-titulo { font-size: 1.8rem; }
+}
