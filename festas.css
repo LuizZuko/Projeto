@@ -146,6 +146,10 @@ body {
     background: #ffcc00; 
     color: #000; 
 }
+ .main-footer {
+    text-align: center;
+    padding: 0,416in 0,208in;
+}
 
 @media (max-width: 6.25in) {
     .main-header {
