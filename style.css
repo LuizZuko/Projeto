@@ -148,3 +148,48 @@ body {
     transform: scale(1.02);
     box-shadow: 0in 0.04in 0.15in rgba(255, 77, 77, 0.3);
 }
+
+.footer {
+    grid-area: footer;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.14in;
+    color: #777;
+    border-top: 0.01in solid #333;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-1in); opacity: 0; }
+    to { transform: translateY(0in); opacity: 1; }
+}
+
+@media (max-width: 8.85in) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+    
+    .sidebar {
+        border-right: none;
+        border-bottom: 0.01in solid #333;
+        padding: 0.1in;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sidebar li a {
+        margin-bottom: 0in;
+        padding: 0.1in 0.2in;
+    }
+}
