@@ -2,108 +2,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
 }
-.container {
-    display: grid;
-    grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "footer footer";
-    grid-template-columns: 2.916in 1fr; 
-    grid-template-rows: 0.833in 1fr 0.625in;
-    min-height: 100vh;
-}
-.header {
-    grid-area: header;
-    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
-    color: #ffffff; 
-    display: flex;
-    align-items: center;
-    padding: 0 0.416in; 
-    box-shadow: 0 0.02in 0.1in rgba(0,0,0,0.2); 
-    z-index: 10;
-    animation: slideDown 0.7s ease;
-}
-/* estilo "geral" */
+
+
 body {
-    background-color: #0f0f0f; 
-    color: #ffffff;            
-    margin: 0;
-    font-family: sans-serif;
-}
-
-/* estrutura do layout grid  */
-.container {
-    display: grid;
-    grid-template-areas: 
-        "header header"
-        "sidebar content"
-        "footer footer";
-    grid-template-columns: 2,916in 1fr; 
-    grid-template-rows: 0,83in 1fr 0,625in;
     min-height: 100vh;
-}
-
-/* header  */
-.header {
-    grid-area: header;
-    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
-    color: #ffffff; 
-    display: flex;
-    align-items: center;
-    padding: 0 0.42in; 
-    box-shadow: 0 0.02in 0.1in rgba(0,0,0,0.3); 
-    z-index: 10;
-}
-
-/* sidebar da navegação  */
-.sidebar {
-    grid-area: sidebar;
-    background: #1a1a1a;
-    padding: 0.21in; 
-    border-right: 0.01in solid #333; /* polegada milimetrica */
-}
-
-.sidebar ul { 
-    list-style: none; 
-    padding: 0;
-}
-
-.sidebar li {
-    padding: 0.15in; 
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 0.08in; 
-    margin-bottom: 0.08in;
-    color: #ccc;
-}
-
-.sidebar li:hover { 
-    background: rgba(37, 117, 252, 0.2); 
-    color: #fff;
-    padding-left: 0.26in; 
-}
-
-/* conteudo principal */
-.content {
-    grid-area: content;
-    padding: 0.31in; 
-    overflow-y: auto;
-}
-
-.banner {
-    margin-bottom: 0.31in;
-    padding: 0.42in;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 0.15in;
-    border-left: 0.05in solid #2575fc;
-}
-
-/* grid fe eventos e cards  */
-.events-grid {
+    font-family: 'Inter', sans-serif;
+ 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2.92in, 1fr));
-    gap: 0.26in; 
- }
-/* Quem não manter a tradição do IN daqui pra frente, nunca irá acertar de primeira a porta USB  */
+    grid-template-rows: auto 1fr;
+    place-items: center;
+}
+
+
+
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    animation: entradaSuave 1s ease-out;
+}
+
+
+.cabecalho h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #ffffff;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card-formulario {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 35px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    position: relative;
+}
+
+
+.card-formulario h2 {
+    color: #ffffff;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+
+.campo {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    color: #ffffff;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: #111;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+input:focus {
+border-color: #fff;
+    transform: scale(1.02);
+}
+
+
+
+
+.btn-animado {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #201f1f;
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.btn-animado:hover {
+    background-color: #fff;
+    color: #f30000;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px #f30000;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .card-formulario {
+        padding: 20px;
+        border-radius: 20px;
+    }
+   
+    .cabecalho h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@keyframes entradaSuave {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
