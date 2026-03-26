@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="agendamento.css">
 </head>
 <body>
 
-    <div class="container">
-    <header class="header">
-        <h1>🚀 Eventos 2026</h1>
+
+    <header class="cabecalho">
+        <h1>Agendamento de Show</h1>
     </header>
-    
-    <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li onclick="redirecionar('home')">Início</li>
-                    <li onclick="redirecionar('pagina1')">Shows</li>
-                    <li onclick="redirecionar('pagina2')">Festas</li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="content">
-            <div class="banner">
-                <h2>Os melhores eventos de 2026</h2>
-            </div>
-            
-            <div class="events-grid">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229" alt="Rock">
-                    <div class="card-info">
-                        <h3>Show de Rock</h3>
-                        <p>25/04 • Arena</p>
-                        <button class="btn">Garantir Ingresso</button>
-                    </div>
+
+
+    <main class="container">
+        <section class="card-formulario">
+            <h2>Preencha os campos abaixo</h2>
+           
+            <form>
+                <div class="campo">
+                    <label>Nome do artista:</label>
+                    <input type="text" placeholder="Ex: Alok">
                 </div>
 
-</div>
-    
-    <script src="script.js"></script>
+
+                <div class="campo">
+                    <label>Data do show:</label>
+                    <input type="date">
+                </div>
+
+
+                <div class="campo">
+                    <label>Local do show:</label>
+                    <input type="text" placeholder="Cidade/Estado">
+                </div>
+                <button type="submit" class="btn-animado">Agendar show</button>
+            </form>
+        </section>
+    </main>
+
+
 </body>
 </html>
